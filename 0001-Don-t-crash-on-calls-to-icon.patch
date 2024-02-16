@@ -21,16 +21,5 @@ index 7b9e3d0d..0483e54d 100644
  }
  
  void _glfwGetWindowPosWayland(_GLFWwindow* window, int* xpos, int* ypos)
-@@ -2353,8 +2352,7 @@ void _glfwRequestWindowAttentionWayland(_GLFWwindow* window)
- 
- void _glfwFocusWindowWayland(_GLFWwindow* window)
- {
--    _glfwInputError(GLFW_FEATURE_UNAVAILABLE,
--                    "Wayland: The platform does not support setting the input focus");
-+    fprintf(stderr, "Ignoring Error: Wayland: The platform does not support setting the input focus\n");
- }
- 
- void _glfwSetWindowMonitorWayland(_GLFWwindow* window,
--- 
 2.42.0
 
